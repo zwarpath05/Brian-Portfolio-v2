@@ -22,7 +22,7 @@ h1,h2,h3,h4,h5,h6 {
     --l-clr-7:#E3DAC9;
     --l-clr-8:#F7E7CE;
     --l-clr-9:#FFF8DC;
-    --l-clr-10:#FFF8E7;
+    --l-clr-10:#cfcece;
 
     /* Dark Colors */
     --d-clr-0:#3D2B1F;
@@ -108,23 +108,25 @@ h1,h2,h3,h4,h5,h6 {
 
     ul{
         list-style:none;
-       padding-left:0;
+        padding-left:0;
    }
 
    li{
        position:relative;
-       padding-left:20px; 
-   }
-
-   li:before{
-       content:'\2713';
-       position:absolute;
-       left:0;  
-       color:var(--d-clr-4);
-   }
+       border-radius:30px;
+       border-left:1px solid var(--r-clr-5);
+       border-bottom:1px solid var(--r-clr-5);
+       border-right:1px solid var(--r-clr-7);
+       border-top:1px solid var(--r-clr-7);
+       display:inline-block;
+       padding:0.8rem;
+       margin-top:10px;
+       min-width:11rem;
+    }
    .box-1 p{
     margin-bottom:0;
-}
+    }
+
 }
 
 #AboutMe {
@@ -197,7 +199,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 #Portfolio {
-    background-color:var(--l-clr-1); 
+    background:var(--g-clr-0); 
 }
 .Image_Gallery{
     margin: 10px 50px;
@@ -209,9 +211,10 @@ h1,h2,h3,h4,h5,h6 {
         border:1px solid var(--d-clr-1);
         max-width: 250px;
         height:250px;
-        padding: 10px;
         margin:10px;
         overflow:hidden;
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+        border-radius:1rem;
     }
 
     img{
@@ -225,7 +228,7 @@ h1,h2,h3,h4,h5,h6 {
         cursor:pointer;
     }
     img:hover{
-        filter: grayscale(0); 
+        filter: grayscale(1); 
     }
 
 }
