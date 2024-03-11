@@ -221,7 +221,7 @@ h1,h2,h3,h4,h5,h6 {
         filter: grayscale(0); 
         transition: 1s;
         width:100%;
-        aspect-ratio: 3 / 9;
+        aspect-ratio: 5 / 9;
         object-fit: cover;
         object-position: top;
         zoom:1;
