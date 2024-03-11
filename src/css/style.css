@@ -218,6 +218,9 @@ h1,h2,h3,h4,h5,h6 {
         filter: grayscale();
         transition: 1s;
         width:100%;
+        aspect-ratio: 16 / 18;
+        object-fit: cover;
+        object-position: top;
         zoom:1;
         cursor:pointer;
     }
