@@ -18,8 +18,10 @@ document.addEventListener("DOMContentLoaded", function() {
 
     const Sticky_Header = ()=> {
         if (window.scrollY > sticky) {
+            $(".header").classList.add("Top_Nav");
             $("#Back_To_Top").classList.add("ScrollTop");
         }else {
+            $(".header").classList.remove("Top_Nav");
             $("#Back_To_Top").classList.remove("ScrollTop"); 
         }
     }
