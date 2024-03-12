@@ -86,9 +86,11 @@ document.addEventListener("DOMContentLoaded", function() {
    const showImage = (src) => {
         const expandedImgElement = $("#expanded_img");
         const imageElement = $("#image");
+        const btnGallery = $("#btnControl");
         
-        if(expandedImgElement && imageElement ){
+        if(expandedImgElement && imageElement && btnGallery){
             expandedImgElement.style.display = "block";
+            btnGallery.style.display = "block";
             imageElement.src = src;
             document.querySelector(".container-fluid").style.display = "none";
             document.body.style.overflow = "hidden";
@@ -98,8 +100,10 @@ document.addEventListener("DOMContentLoaded", function() {
   
     const closeImage = () => {
         const expandedImgElement = $("#expanded_img");
-        if(expandedImgElement){
+        const btnGallery = $("#btnControl");
+        if(expandedImgElement && btnGallery){
             expandedImgElement.style.display = "none";
+            btnGallery.style.display = "none";
             document.querySelector(".container-fluid").style.display = "block";
             document.body.style.overflow = "auto";
         }

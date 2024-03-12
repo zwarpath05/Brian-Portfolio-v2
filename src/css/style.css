@@ -261,6 +261,11 @@ h1,h2,h3,h4,h5,h6 {
     backdrop-filter: blur(10px);
   }
 
+  #btnControl{
+    display:none;
+    position: fixed;
+    z-index: 1200;
+  }
 
 .image_content {
     margin: auto;
