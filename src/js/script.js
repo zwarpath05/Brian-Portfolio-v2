@@ -13,6 +13,7 @@ document.addEventListener("DOMContentLoaded", function() {
         Sticky_Header();
         highlightNavLinks();
         reveal();
+        MobileViewPort();
         
     });
 
@@ -23,6 +24,12 @@ document.addEventListener("DOMContentLoaded", function() {
         }else {
             $(".header").classList.remove("Top_Nav");
             $("#Back_To_Top").classList.remove("ScrollTop"); 
+        }
+    }
+
+    const MobileViewPort =() => {
+        if(window.innerWidth < 767 && window.scrollY > sticky){
+            $(".header").classList.remove("Top_Nav");
         }
     }
 
