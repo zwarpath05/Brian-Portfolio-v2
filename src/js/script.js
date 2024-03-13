@@ -111,7 +111,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     const reveal = () => {
-        var reveals = document.querySelectorAll(".reveal");
+        var reveals = $(".reveal");
         for (var i = 0; i < reveals.length; i++) {
           var windowHeight = window.innerHeight;
           var elementTop = reveals[i].getBoundingClientRect().top;
