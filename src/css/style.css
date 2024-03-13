@@ -409,6 +409,10 @@ p, a, ul, li, strong {
 }
 
 @media only screen and (max-width: 576px) {
+    .section {
+        padding-left:20px !important;
+        padding-right:20px !important;
+    }
     .box-1{
 
         .col:nth-of-type(2){
