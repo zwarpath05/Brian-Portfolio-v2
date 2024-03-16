@@ -62,7 +62,8 @@ p, a, ul, li, strong {
 }
 
 .header{
-    background-color:var(--l-clr-7);
+    position:absolute;
+    width:100%;
 
     .col-2 {
         display:none;
@@ -232,6 +233,14 @@ p, a, ul, li, strong {
         overflow:hidden;
         box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
         border-radius:1rem;
+        background-color:var(--d-clr-1);
+    }
+    .Img_Container p {
+        padding:10px;
+        border:1px solid var(--d-clr-8);
+        margin:10px;
+        border-radius:10px;
+        color:var(--l-clr-2);
     }
 
     img{
@@ -409,6 +418,10 @@ p, a, ul, li, strong {
 }
 
 @media only screen and (max-width: 576px) {
+    .header{
+        position:relative;
+        background-color: var(--l-clr-7);
+    }
     .section {
         padding-left:20px !important;
         padding-right:20px !important;
