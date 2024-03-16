@@ -347,7 +347,11 @@ p, a, ul, li, strong {
 
 
 @media only screen and (max-width: 767px)  {
+
     .header{
+        background-color: var(--l-clr-7);
+        padding-left:0 !important;
+        padding-right:0 !important;
         .col-8 {
             display:none;
         }
@@ -418,10 +422,7 @@ p, a, ul, li, strong {
 }
 
 @media only screen and (max-width: 576px) {
-    .header{
-        position:relative;
-        background-color: var(--l-clr-7);
-    }
+
     .section {
         padding-left:20px !important;
         padding-right:20px !important;
