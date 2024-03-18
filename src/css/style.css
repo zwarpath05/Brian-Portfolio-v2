@@ -115,7 +115,19 @@ p, a, ul, li, strong {
     background-color:var(--l-clr-3);
 }
 
+.btn.btn-outline-primary{
+    border:1px solid var(--d-clr-0);
+    color:var(--d-clr-0);
+    width:10rem;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    font-weight:bold;
+    transition: all 0.8s;
+}
 
+.btn.btn-outline-primary:hover{
+    background-color:var(--d-clr-1);
+    color:var(--l-clr-0);
+}
 
 
 /* CSS NESTING */
@@ -180,7 +192,7 @@ p, a, ul, li, strong {
     .col-lg-4 + .col,
     .col-md-4 + .col,
     .col-xs-12 + .col{
-        background-color:var(--l-clr-9);
+        background-color:var(--l-clr-4);
         box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
     }
 
@@ -240,13 +252,22 @@ p, a, ul, li, strong {
         background-color:var(--d-clr-1);
     }
     .Img_Container p {
-        padding:10px;
-        border:1px solid var(--d-clr-8);
         margin:10px;
-        border-radius:10px;
         color:var(--l-clr-2);
     }
-
+    .Img_Container a{
+        text-decoration:none;
+        color:var(--l-clr-2);
+        display:block;
+        width:100%;
+        border:1px solid var(--d-clr-8);
+        border-radius:10px;
+        padding:10px;
+        transition: all 0.8s;
+    }
+    .Img_Container a:hover {
+        background-color:var(--d-clr-2);
+    }
     img{
         filter: grayscale(0); 
         transition: 1s;
