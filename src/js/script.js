@@ -58,14 +58,13 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // IMAGE GALLERY
     let images = []
+    let currentImageIndex = 0;
     const imageElements = document.querySelectorAll(".Image_Gallery img");
 
     imageElements.forEach(img => {
         const srcValue = img.getAttribute("src");
         images.push(srcValue);
     });
-
-    let currentImageIndex = 0;
 
     const nextImage = () => {
         if (images.length > 0) {
@@ -110,16 +109,14 @@ document.addEventListener("DOMContentLoaded", function() {
 
     }
 
+    // ANIMATION
     const reveal = () => {
         var reveals = $(".reveal");
         for (var i = 0; i < reveals.length; i++) {
-          var windowHeight = window.innerHeight;
-          var elementTop = reveals[i].getBoundingClientRect().top;
-          var elementVisible = 150;
-          if (elementTop < windowHeight - elementVisible) {
-            reveals[i].classList.add("active");
-          } else {
-            reveals[i].classList.remove("active");
-          }
+          var windowHeight = window.innerHeight,
+              elementTop = reveals[i].getBoundingClientRect().top, 
+              elementVisible = 150;
+              reveals[i].classList.toggle("active", elementTop < windowHeight - elementVisible);
         }
+    
       }

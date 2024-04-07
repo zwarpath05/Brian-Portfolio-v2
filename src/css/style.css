@@ -129,7 +129,15 @@ p, a, ul, li, strong {
     color:var(--l-clr-0);
 }
 
+.btn-outline-primary a {
+    display:block;
+    text-decoration:none;
+    color:var(--d-clr-0);
+}
 
+.btn.btn-outline-primary:hover a{
+    color:var(--l-clr-0);
+}
 /* CSS NESTING */
 .section {
     padding-top:60px;
