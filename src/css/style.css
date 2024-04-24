@@ -456,6 +456,7 @@ p, a, ul, li, strong {
 
 @media only screen and (max-width: 576px) {
 
+    .hero.section.p-2, 
     .section {
         padding-left:20px !important;
         padding-right:20px !important;
