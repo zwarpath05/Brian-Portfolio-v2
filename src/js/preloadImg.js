@@ -25,7 +25,12 @@ var imageUrls = [
     "src/IMAGES/gallery/Img-Gallery16.webp",
     "src/IMAGES/PSD/CameraStore-Webdesign1.png",
     "src/IMAGES/PSD/HighDro-HomePageDesign.jpg",
-    "src/IMAGES/PSD/Koze-HomeRedesign.jpg"
+    "src/IMAGES/PSD/Koze-HomeRedesign.jpg",
+    "src/IMAGES/UK/UK-Duda-Build-1.webp",
+    "src/IMAGES/UK/UK-Duda-Build-2.webp",
+    "src/IMAGES/UK/UK-Duda-Build-3.webp",
+    "src/IMAGES/UK/UK-Duda-Build-4.webp",
+    "src/IMAGES/UK/UK-Duda-Build-5.webp"
 ];
 
 // Function to preload images
