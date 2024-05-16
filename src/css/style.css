@@ -243,6 +243,9 @@ p, a, ul, li, strong {
 #Portfolio {
     background:var(--g-clr-0); 
 }
+.Image_Gallery.five-cols{
+    grid-template-columns: auto auto auto auto auto;
+}
 .Image_Gallery{
     margin: 10px 50px;
     display: grid;
@@ -447,8 +450,11 @@ p, a, ul, li, strong {
         flex-wrap: wrap;
 
         .Img_Container{
-            max-width:150px;
-            height:150px;
+            max-width:160px;
+            height:350px;
+        }
+        p {
+            font-size:0.9em;
         }
     }
 
