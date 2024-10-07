@@ -19,11 +19,11 @@ p, a, ul, li, strong {
 
 :root {
     /* Light Colors */
-    --l-clr-0:#EDEAE0;
-    --l-clr-1:#F0F8FF;
-    --l-clr-2:#F2F3F4;
-    --l-clr-3:#FAEBD7;
-    --l-clr-4:#F0FFFF;
+    --l-clr-0:rgb(237, 234, 224);
+    --l-clr-1:rgb(240, 248, 255);
+    --l-clr-2:rgb(242, 243, 244);
+    --l-clr-3:rgb(250, 235, 215);
+    --l-clr-4:rgb(240, 255, 255);
     --l-clr-5:#FEFEFA;
     --l-clr-6:#F5F5DC;
     --l-clr-7:#E3DAC9;
@@ -32,11 +32,11 @@ p, a, ul, li, strong {
     --l-clr-10:#cfcece;
 
     /* Dark Colors */
-    --d-clr-0:#3D2B1F;
+    --d-clr-0:rgb(61, 43, 31);
     --d-clr-1:#000000;
-    --d-clr-2:#3D0C02;
-    --d-clr-3:#3B3C36;
-    --d-clr-4:#4B3621;
+    --d-clr-2:rgb(61, 12, 2);
+    --d-clr-3:rgb(59, 60, 54);
+    --d-clr-4:rgb(75, 54, 33);
     --d-clr-5:#36454F;
     --d-clr-6:#301934;
     --d-clr-7:#555D50;
