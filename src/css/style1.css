@@ -1,36 +1,49 @@
 /* FONT */
-@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600&family=Encode+Sans+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Oswald:wght@200;300;400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Newa:wght@400&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600&family=Encode+Sans+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Oswald:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Newa:wght@400&family=Roboto:wght@100;300;400;500;700;900&display=swap");
 
-
-h1,h2,h3,h4,h5,h6 {
-    font-family: "Oswald", sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Oswald", sans-serif;
 }
-p, a, ul, li, strong {
-    font-family: "Roboto", sans-serif;
+p,
+a,
+ul,
+li,
+strong {
+  font-family: "Roboto", sans-serif;
 }
 * {
-    box-sizing:border-box;
+  box-sizing: border-box;
 }
 *:hover {
-    transition: all 0.4s;
+  transition: all 0.4s;
 }
 
 /** VARIABLES **/
 :root {
-    /** PRIMARY **/
-    --dark-color:rgba(0, 0, 0, 0.5);
-    --light-color:rgba(255, 255, 255, 1);
-    
-    /** THEME COLOR **/
-   --theme-color-1:rgba(66, 148, 37, 0.5);
-   --theme-color-2:rgba(66, 148, 37, 0.5);
+  /** PRIMARY **/
+  --dark-color: rgba(0, 0, 0, 0.5);
+  --light-color: rgba(255, 255, 255, 1);
+
+  /** THEME COLOR **/
+  --theme-color-1: rgba(66, 148, 37, 0.5);
+  --theme-color-2: rgba(66, 148, 37, 0.5);
 }
 
-
-.sticky-top { background-color:var(--theme-color-1); }
-
-.Top_Nav { background-color:var(--dark-color); }
-.Top_Nav *{
-    color:var(--light-color);
+.sticky-top {
+  background-color: var(--theme-color-1);
 }
+
+.Top_Nav {
+  background-color: var(--dark-color);
+}
+.Top_Nav * {
+  color: var(--light-color);
+}
+
+/** ROW HERO **/
