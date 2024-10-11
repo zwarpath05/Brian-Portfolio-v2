@@ -16,7 +16,7 @@
       crossorigin="anonymous"
       media="all"
     />
-    <link rel="stylesheet" href="src/css/style.css" media="all" />
+
     <link rel="stylesheet" href="src/css/style1.css" media="all" />
   </head>
   <body>
@@ -40,25 +40,69 @@
             <div class="p-4">
               <ul class="nav nav-pills justify-content-end">
                 <li class="nav-item">
-                  <a href="#Home" class="nav-link">Home</a>
+                  <button
+                    class="nav-link active"
+                    id="nav-home-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#nav-home"
+                    type="button"
+                    role="tab"
+                    aria-controls="nav-home"
+                    aria-selected="true"
+                  >
+                    Home
+                  </button>
                 </li>
                 <li class="nav-item">
-                  <a href="#AboutMe" class="nav-link">About Me</a>
+                  <button
+                    class="nav-link"
+                    id="nav-about-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#nav-about"
+                    type="button"
+                    role="tab"
+                    aria-controls="nav-profile"
+                    aria-selected="false"
+                  >
+                    About
+                  </button>
                 </li>
                 <li class="nav-item">
-                  <a href="#Skills" class="nav-link">Skills</a>
+                  <button
+                    class="nav-link"
+                    id="nav-skills-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#nav-skills"
+                    type="button"
+                    role="tab"
+                    aria-controls="nav-skills"
+                    aria-selected="false"
+                  >
+                    Skills
+                  </button>
                 </li>
                 <li class="nav-item">
-                  <a href="#Portfolio" class="nav-link">Portfolio</a>
+                  <button
+                    class="nav-link"
+                    id="nav-portfolio-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#nav-portfolio"
+                    type="button"
+                    role="tab"
+                    aria-controls="nav-contact"
+                    aria-selected="false"
+                  >
+                    Portfolio
+                  </button>
                 </li>
               </ul>
             </div>
           </nav>
         </div>
       </div>
-      <div class="row hero d-flex align-items-center">
-        <div class="col-sm-12">
-          <article>
+      <div class="row hero d-flex align-items-center justify-content-center">
+        <div class="col-sm-12 tab-content" id="nav-tab-content">
+          <article class="tab-pane fade show active" id="nav-home">
             <section class="text-center">
               <h1>Hey There!<br /><span>Brian Anthony Corcega</span></h1>
               <p><b>FRONT END DEVELOPER / WEB DESIGNER</b></p>
@@ -98,6 +142,21 @@
                   >Download Resume</a
                 >
               </button>
+            </section>
+          </article>
+          <article class="tab-pane fade text-center" id="nav-about">
+            <section>
+              <h2>ABOUT</h2>
+            </section>
+          </article>
+          <article class="tab-pane fade text-center" id="nav-skills">
+            <section>
+              <h2>SKILLS</h2>
+            </section>
+          </article>
+          <article class="tab-pane fade text-center" id="nav-portfolio">
+            <section>
+              <h2>PORTFOLIO</h2>
             </section>
           </article>
         </div>

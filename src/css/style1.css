@@ -33,6 +33,14 @@ strong {
   /** THEME COLOR **/
   --theme-color-1: rgba(66, 148, 37, 0.5);
   --theme-color-2: rgba(66, 148, 37, 0.5);
+
+  /** GRADIENT **/
+  --gradient-1: linear-gradient(
+    270deg,
+    hsla(38, 17%, 62%, 1) 0%,
+    hsla(67, 5%, 71%, 1) 50%,
+    hsla(182, 14%, 56%, 1) 100%
+  );
 }
 
 .sticky-top {
@@ -47,3 +55,49 @@ strong {
 }
 
 /** ROW HERO **/
+.hero {
+  min-height: 100vh;
+  background: var(--gradient-1);
+
+  .social-media img {
+    max-width: 50px !important;
+  }
+  .social-media a:hover img {
+    opacity: 0.5;
+  }
+}
+
+.btn.btn-outline-primary {
+  border: 1px solid var(--d-clr-0);
+  color: var(--d-clr-0);
+  width: 10rem;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  font-weight: bold;
+  transition: all 0.8s;
+}
+
+.btn.btn-outline-primary {
+  border: 1px solid var(--d-clr-0);
+  color: var(--d-clr-0);
+  width: 10rem;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  font-weight: bold;
+  transition: all 0.8s;
+}
+
+.btn.btn-outline-primary:hover {
+  background-color: var(--dark-color);
+  color: var(--light-color);
+}
+
+.btn-outline-primary a {
+  display: block;
+  text-decoration: none;
+  color: var(--dark-color);
+}
+
+.btn.btn-outline-primary:hover a {
+  color: var(--light-color);
+}
