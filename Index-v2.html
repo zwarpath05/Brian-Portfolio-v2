@@ -9,6 +9,7 @@
     />
     <title>Brian Portfolio</title>
     <link rel="icon" type="image/x-icon" href="src/IMAGES/Favicon.png" />
+
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -17,172 +18,69 @@
       media="all"
     />
 
-    <link rel="stylesheet" href="src/css/style1.css" media="all" />
+    <link rel="stylesheet" href="src/css/style.css" media="all" />
   </head>
+
   <body>
-    <div class="container-fluid">
-      <div class="row sticky-top">
-        <div class="col-sm-12">
-          <div class="navbar d-block d-sm-none">
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarToggleExternalContent"
-              aria-controls="navbarToggleExternalContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
+    <header>
+      <div class="container">
+        <div class="row d-flex">
+          <!--LOGO-->
+          <div class="col-sm-1">
+            <a href="#"><img src="src/IMAGES/bac-Logo.png" class="img-fluid" alt="Logo" title="Logo"/></a>
           </div>
-          <nav>
-            <div class="p-4">
-              <ul class="nav nav-pills justify-content-end">
-                <li class="nav-item">
-                  <button
-                    class="nav-link active"
-                    id="nav-home-tab"
-                    data-bs-toggle="tab"
-                    data-bs-target="#nav-home"
-                    type="button"
-                    role="tab"
-                    aria-controls="nav-home"
-                    aria-selected="true"
-                  >
-                    Home
-                  </button>
-                </li>
-                <li class="nav-item">
-                  <button
-                    class="nav-link"
-                    id="nav-about-tab"
-                    data-bs-toggle="tab"
-                    data-bs-target="#nav-about"
-                    type="button"
-                    role="tab"
-                    aria-controls="nav-profile"
-                    aria-selected="false"
-                  >
-                    About
-                  </button>
-                </li>
-                <li class="nav-item">
-                  <button
-                    class="nav-link"
-                    id="nav-skills-tab"
-                    data-bs-toggle="tab"
-                    data-bs-target="#nav-skills"
-                    type="button"
-                    role="tab"
-                    aria-controls="nav-skills"
-                    aria-selected="false"
-                  >
-                    Skills
-                  </button>
-                </li>
-                <li class="nav-item">
-                  <button
-                    class="nav-link"
-                    id="nav-portfolio-tab"
-                    data-bs-toggle="tab"
-                    data-bs-target="#nav-portfolio"
-                    type="button"
-                    role="tab"
-                    aria-controls="nav-contact"
-                    aria-selected="false"
-                  >
-                    Portfolio
-                  </button>
-                </li>
-              </ul>
-            </div>
-          </nav>
+
+          <!-- NAVIGATION -->
+          <div class="col-sm-8">
+
+            <!--NAVIGATION  MOBILE VIEWPORT-->
+             <section class="d-flex justify-content-center align-items-center">
+                <div class="d-block d-sm-none">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="bi" fill="currentColor" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"></path>
+                      </svg>
+                    </button>
+                </div>
+                <div class="nav-bar offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header d-block d-sm-none text-end">
+                      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                      <nav class="nav flex-nowrap">
+                        <button class="nav-item nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">
+                          Home
+                        </button>
+                        <button class="nav-item nav-link" id="nav-about-tab" data-bs-toggle="tab" data-bs-target="#nav-about" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">
+                          About
+                        </button>
+                        <button class="nav-item nav-link" id="nav-skills-tab" data-bs-toggle="tab" data-bs-target="#nav-skills" type="button" role="tab" aria-controls="nav-skills" aria-selected="false">
+                          Skills
+                        </button>
+                        <button class="nav-item nav-link" id="nav-portfolio-tab" data-bs-toggle="tab" data-bs-target="#nav-portfolio" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">
+                          Portfolio
+                        </button>
+                      </nav>
+                    </div>
+                </div>
+               
+             </section>
+          </div>
+
+          <!--SOCIAL MEIDA-->
+          <div class="col-sm-3">
+            <section class="d-flex socialMedia flex-nowrap">
+              <a href="mailto:zwarpath05@gmail.com"><img src="src/IMAGES/Mail-Icon.webp" title="Email Address" alt="email"/></a>
+              <a rel="noopener" href="https://www.linkedin.com/in/brian-corcega-6540a610b" target="_blank"><img src="src/IMAGES/LinkedIn-Icon.webp" title="LinkedIn" alt="LinkedIn"/></a>
+              <a rel="noopener" href="https://github.com/zwarpath05" target="_blank"><img src="src/IMAGES/github-Icon.webp" title="Github" alt="Github"/></a>
+            </section>
+          </div>
         </div>
       </div>
-      <div class="row hero d-flex align-items-center justify-content-center">
-        <div class="col-sm-12 tab-content" id="nav-tab-content">
-          <article class="tab-pane fade show active" id="nav-home">
-            <section class="text-center">
-              <h1>Hey There! test<br /><span>Brian Anthony Corcega</span></h1>
-              <p><b>FRONT END DEVELOPER / WEB DESIGNER</b></p>
-            </section>
-            <section class="social-media text-center">
-              <a href="mailto:zwarpath05@gmail.com"
-                ><img
-                  src="src/IMAGES/Mail-Icon.webp"
-                  title="Email Address"
-                  alt="email"
-              /></a>
-              <a
-                rel="noopener"
-                href="https://www.linkedin.com/in/brian-corcega-6540a610b"
-                target="_blank"
-                ><img
-                  src="src/IMAGES/LinkedIn-Icon.webp"
-                  title="LinkedIn"
-                  alt="LinkedIn"
-              /></a>
-              <a
-                rel="noopener"
-                href="https://github.com/zwarpath05"
-                target="_blank"
-                ><img
-                  src="src/IMAGES/github-Icon.webp"
-                  title="Github"
-                  alt="Github"
-              /></a>
-            </section>
-            <section class="text-center">
-              <button type="button" class="btn btn-outline-primary my-3 p-2">
-                <a
-                  href="src/files/Brian Anthony Corcega-Resume.pdf"
-                  target="_blank"
-                  download
-                  >Download Resume</a
-                >
-              </button>
-            </section>
-          </article>
-          <article class="tab-pane fade text-center" id="nav-about">
-            <section>
-              <h2>ABOUT</h2>
-              <p>
-                I am Brian Corcega, working as a web designer and front-end
-                developer. I’ve been working in the IT industry for 10 years in
-                web development and offer services that specialize in crafting
-                visually appealing and user-friendly websites with a combination
-                of design aesthetics and technical expertise to bring digital
-                concepts to life.
-              </p>
-              <p>
-                I am an aspiring artist in designing and web development. I have
-                numerous struggles with coding and design that can be
-                challenging at my work, and these challenges can evolve due to
-                technological advancements and changing user expectations.
-                However, I continuously learn new skills and collaborate with
-                other artists to overcome these challenges and deliver
-                successful web projects. Additionally, staying connected with
-                the web design and development community can help us
-                professionals learn from other people's experiences and find
-                solutions to common problems.
-              </p>
-            </section>
-          </article>
-          <article class="tab-pane fade text-center" id="nav-skills">
-            <section>
-              <h2>SKILLS</h2>
-            </section>
-          </article>
-          <article class="tab-pane fade text-center" id="nav-portfolio">
-            <section>
-              <h2>PORTFOLIO</h2>
-            </section>
-          </article>
-        </div>
-      </div>
-    </div>
-    <script src="src/js/script1.js"></script>
+    </header>
+
+
+    <script src="src/js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
