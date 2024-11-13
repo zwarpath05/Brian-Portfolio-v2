@@ -1,257 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"  content ="Experienced web designer and front-end developer with 9 years in the IT industry. Specializing in crafting visually appealing, user-friendly websites, blending design aesthetics and technical expertise to bring digital concepts to life. Overcoming coding and design challenges through continuous learning and collaboration with fellow artists, ensuring successful web projects. Stay connected with the web design community for ongoing growth and problem-solving.">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Experienced web designer and front-end developer with 9 years in the IT industry. Specializing in crafting visually appealing, user-friendly websites, blending design aesthetics and technical expertise to bring digital concepts to life. Overcoming coding and design challenges through continuous learning and collaboration with fellow artists, ensuring successful web projects. Stay connected with the web design community for ongoing growth and problem-solving."
+    />
     <title>Brian Portfolio</title>
-    <link rel="icon" type="image/x-icon" href="src/IMAGES/Favicon.png">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" media="all">
-    <link rel="stylesheet" href="src/css/style.css" media="all">
-</head>
-<body>
-    
-    <!--HEADER-->
-    <div class="container-fluid sticky-top">
-        <div class="header row gap-1 py-0 px-5 align-items-center">
-            <div class="col-2">
-                <nav class="navbar">
-                    <div class="container-fluid">
-                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                      </button>
+    <link rel="icon" type="image/x-icon" href="src/IMAGES/Favicon.png" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+      media="all"
+    />
+
+    <link rel="stylesheet" href="src/css/style.css" media="all" />
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <div class="row d-flex">
+          <!--LOGO-->
+          <div class="col-sm-1">
+            <a href="#"><img src="src/IMAGES/bac-Logo.png" class="img-fluid" alt="Logo" title="Logo"/></a>
+          </div>
+
+          <!-- NAVIGATION -->
+          <div class="col-sm-9">
+
+            <!--NAVIGATION  MOBILE VIEWPORT-->
+             <section class="d-flex justify-content-center align-items-center">
+                <div class="d-block d-sm-none">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="bi" fill="currentColor" viewBox="0 0 16 16" style="color:#fff; width:50px;">
+                        <path fill-rule="evenodd" d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"></path>
+                      </svg>
+                    </button>
+                </div>
+                <div class="nav-bar offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header d-block d-sm-none text-end">
+                      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
-                </nav>
-                <div class="collapse" id="navbarToggleExternalContent">
-                    <div class="p-4">
-                        <ul class="nav nav-pills justify-content-end">
-                            <li class="nav-item">
-                                <a href="#Home" class="nav-link">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#AboutMe" class="nav-link">About Me</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#Skills" class="nav-link">Skills</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#Portfolio" class="nav-link">Portfolio</a>
-                            </li>
-                        </ul>
+                    <div class="offcanvas-body">
+                      <nav class="nav flex-nowrap">
+                        <button class="nav-item nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">
+                          Home
+                        </button>
+                        <button class="nav-item nav-link" id="nav-about-tab" data-bs-toggle="tab" data-bs-target="#nav-about" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">
+                          About
+                        </button>
+                        <button class="nav-item nav-link" id="nav-skills-tab" data-bs-toggle="tab" data-bs-target="#nav-skills" type="button" role="tab" aria-controls="nav-skills" aria-selected="false">
+                          Skills
+                        </button>
+                        <button class="nav-item nav-link" id="nav-portfolio-tab" data-bs-toggle="tab" data-bs-target="#nav-portfolio" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">
+                          Portfolio
+                        </button>
+                      </nav>
                     </div>
                 </div>
-            </div>
-            <div class="col text-start px-3 py-1"><a href="index.html?#Home"><img src="src/IMAGES/bac-Logo.png" class="img-fluid" alt="Logo" title="Logo" width="50"/></a></div>
-            <div class="col-8 px-2 py-1">
-                <ul class="nav nav-pills justify-content-end">
-                    <li class="nav-item">
-                        <a href="#AboutMe" class="nav-link">About Me</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#Skills" class="nav-link">Skills</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#Portfolio" class="nav-link">Portfolio</a>
-                    </li>
-                </ul>
-            </div>
+               
+             </section>
+          </div>
+
+          <!--SOCIAL MEIDA-->
+          <div class="col-sm-2">
+            <section class="d-flex socialMedia flex-nowrap">
+              <a href="mailto:zwarpath05@gmail.com"><img src="src/IMAGES/Mail-Icon.webp" title="Email Address" alt="email"/></a>
+              <a rel="noopener" href="https://www.linkedin.com/in/brian-corcega-6540a610b" target="_blank"><img src="src/IMAGES/LinkedIn-Icon.webp" title="LinkedIn" alt="LinkedIn"/></a>
+              <a rel="noopener" href="https://github.com/zwarpath05" target="_blank"><img src="src/IMAGES/github-Icon.webp" title="Github" alt="Github"/></a>
+            </section>
+          </div>
         </div>
-    </div>
-    <!--BODY-->
-    <div class="main container-fluid">
-        <div class="hero section row gap-3 p-2 align-items-center" id="Home">
-            <div class="col-lg-6  col-md-6 col-sm-12  col-xs-12 text-center gap-2">
-                    <img src="src/IMAGES/Profile.webp" class="img-fluid" title="Profile" alt="Profile Picture">
-            </div>
-            <div class="col text-center gap-2">
-                <h1>HELLO, THERE <br/> <span> BRIAN ANTHONY CORCEGA</span></h1>
-                <p><strong>FRONT END DEVELOPER / WEB DESIGNER</strong></p>
-                <div class="social-media">
-                    <a href="mailto:zwarpath05@gmail.com"><img src="src/IMAGES/Mail-Icon.webp" title="Email Address" alt="email"/></a>
-                    <a rel="noopener" href="https://www.linkedin.com/in/brian-corcega-6540a610b" target="_blank"><img src="src/IMAGES/LinkedIn-Icon.webp" title="LinkedIn" alt="LinkedIn"/></a>
-                    <a rel="noopener" href="https://github.com/zwarpath05" target="_blank"><img src="src/IMAGES/github-Icon.webp" title="Github" alt="Github"/></a>
+      </div>
+    </header>
+    <main>
+      <div class="row">
+        <div class="col-sm-12 tab-content" id="nav-tab-content">
+             <section class="d-flex flex-row-reverse flex-wrap align-items-center tab-pane fade show active" id="nav-home">
+                <div class="col-sm-6 text-center">
+                  
                 </div>
-                <button type="button" class="btn btn-outline-primary my-3 p-2">   
-                    <a href="src/files/Brian Anthony Corcega-Resume.pdf" target="_blank" download>Download Resume</a> 
-                </button>
-            </div>
-        </div>
-
-        <!--ABOUT-->
-        <div class="section row px-5 align-items-center justify-content-center" id="AboutMe">
-            <div class="col-lg-12 p-3 col-md-12 text-center">
-                <h2>About Me:</h2>
-                <p>I am Brian Corcega, working as a web designer and front-end developer. I’ve been working in the IT industry for 10 years in web development and offer services that specialize in crafting visually appealing and user-friendly websites with a combination of design aesthetics and technical expertise to bring digital concepts to life.</p>
-                <p>I am an aspiring artist in designing and web development. I have numerous struggles with coding and design that can be challenging at my work, and these challenges can evolve due to technological advancements and changing user expectations. However, I continuously learn new skills and collaborate with other artists to overcome these challenges and deliver successful web projects. Additionally, staying connected with the web design and development community can help us professionals learn from other people's experiences and find solutions to common problems.</p>
-            </div>
-            <div class="col-lg-12  p-3 text-center">
-                <h4>Web Development & Graphcs:</h4>
-                 <div class="row box-1 px-3">
-                    <div class="col">
-                        <ul>
-                          <li>VS Code</li>
-                          <li>Notepad ++</li>
-                          <li>DUDA Platform</li>
-                          <li>Weebly</li>
-                          <li>Wordpress</li>
-                          <li>Webflow</li>
-                          <li>Html</li>
-                          <li>CSS</li>
-                          <li>Bootstrap</li>
-                          <li>Javascript & Jquery</li>
-                          <li>Adobe Photoshop</li>
-                          <li>Adobe Illustrator</li>
-                          <li>Github</li>
-                          <li>Chrome Dev Tools</li>
-                          <li>Firefox Dev Tools</li>
-                       </ul>
-                    </div>
-                 </div>
-            </div>
-            <div class="col p-3 text-center">
-                <h4>Work Experience:</h4>
-                <div class="box row text-center p-3">
-                    <div class="col-12 p-1">
-                        <p><strong>TCS (TATA CONSULTANCY SERVICES) </strong><br /> (June 16, 2015 - February 13 2024)</p>
-                       <p>In the website development process, we focus on creating a visually captivating web template layout by leveraging creative input within the CMS editor. This involves optimizing, cropping, and organizing website images to enhance presentation quality. We prioritize implementing responsive design principles to guarantee seamless compatibility across a wide range of devices and screen resolutions. Adhering strictly to company standards and industry best practices, we ensure a smooth and efficient development process. Crafting user interfaces (UI) that not only look appealing but also prioritize ease of use is a key aspect of our approach. We meticulously curate color palettes, typography selections, and imagery to create a cohesive visual identity for the website. Thorough testing is conducted to validate website functionality across various web browsers, ensuring a consistent user experience. Additionally, we focus on streamlining loading times and optimizing resource consumption to achieve optimal performance for the website.</p>
-                    </div>
-                    <div class="col-12 p-1"> 
-                        <p><strong>HIBU / YELL ADWORKS</strong><br /> (January 13, 2013 - June 15, 2015)</p>
-                        <p>Our process begins with the transformation of PSD templates, supplied by designers, into HTML/CSS format utilizing the CMS (FATWIRE). To enhance functionality and interactivity, we seamlessly integrate custom CSS, CSS3, jQuery snippets, and JavaScript code into the website's HTML structure. Furthermore, we undertake image cropping and sorting to elevate the visual appeal of the website. Ensuring a seamless user experience, we optimize and guarantee responsiveness across diverse screen sizes and devices. Additionally, we prioritize addressing client requests by rectifying any broken layouts on the site to align with their specifications. Finally, we execute the migration of the website from its current platform to the new platform, ensuring a smooth transition and continuity of service.</p>
-                    </div>
+                <div class="col-sm-6">
+              
                 </div>
+            </section>
+            <section class="tab-pane fade d-flex" id="nav-about">
+                <div class="col-sm-6">
 
-            </div>
-        </div>
-
-        <!--SKILL-->
-        <div class="section row px-5" id="Skills">
-            <div class="col-12 text-center p-3">
-                <h2 class="my-2">Skills</h2>
-           </div>
-        </div>
-        <div class="NewSection first row align-items-center px-3">
-            <div class="col-lg-4  col-md-4 col-sm-12 text-center px-3">
-                <img class="img-fluid reveal" src="src//IMAGES/Webdesign-bg.jpg" alt="We" title=""/>
-            </div>
-            <div class="col p-5 my-2">
-                <div class="box-container text-start">
-                    <h4>Web Design</h4>
-                    <ul>
-                        <li>Design the website using color scheme, typography, vector icons and imagery</li>
-                        <li>Maintain visual style across the site</li>
-                        <li>Create Mock up design layout</li>
-                        <li>Wireframing layout</li>
-                        <li>Integrate text, images, videos, and other content into the website design.</li>
-                    </ul>
-                </div>  
-            </div>
-        </div>
-
-        <div class="NewSection second row align-items-center px-3">
-            <div class="col-lg-4 col-md-4  col-sm-12 text-center px-3 order-2">
-                <img class="img-fluid reveal" src="src//IMAGES/WebDevelopment-bg.jpg" alt="" title=""/>
-             </div>
-             <div class="col text-end p-5 my-2">
-                <div class="box-container text-start">
-                    <h4>Web Development</h4>
-                    <ul>
-                        <li>Minify and compress files (HTML, CSS, JavaScript).</li>
-                        <li>Write HTML for the website's structure.</li>
-                        <li>Style the website using CSS for layout and design.</li>
-                        <li>Implement interactivity and functionality using JavaScript.</li>
-                        <li>Optimize for various screen sizes and devices (responsive design).</li>
-                    </ul>
                 </div>
-            </div>
-        </div>
-         <div class="NewSection third row align-items-center px-3">
-            <div class="col-lg-4 col-md-4  col-sm-12 text-center px-3">
-                    <img class="img-fluid reveal"  src="src//IMAGES/Logo-bg.jpg" alt="" title=""/>
-            </div>
-             <div class="col text-start p-5 my-2">
-                <div class="box-container text-start">
-                   <h4>Logo Design</h4>
-                    <ul>
-                        <li>Brainstorm and sketch initial logo ideas and concepts.</li>
-                        <li>Choose appropriate fonts or typefaces that complement the logo concept.</li>
-                        <li>Define a color palette that conveys the brand's personality and values</li>
-                        <li>Create rough sketches and basic digital drafts of the logo concepts</li>
-                        <li>Create versions with transparent backgrounds for versatile use</li>
-                    </ul>
+                <div class="col-sm-6"></div>
+            </section>
+            <section class="tab-pane fade d-flex" id="nav-skills">
+              <div class="col-sm-6">
+
               </div>
-           </div>
-        </div>
+              <div class="col-sm-6"></div>
+            </section>
+            <section class="tab-pane fade d-flex" id="nav-portfolio">
+              <div class="col-sm-12 d-flex">
+                  <section class="d-flex flex-column col-sm-4" id="list-tab" role="tablist" >
+                      <button class="btn active" data-bs-toggle="list" data-bs-target="#US-Projects">US PROJECT</button>
+                      <button class="btn" data-bs-toggle="list" data-bs-target="#UK-Projects">UK PROJECT</button>
+                      <button class="btn" data-bs-toggle="list" data-bs-target="#Web-Design-Projects" >WEB DESIGN</button>
+                      <button class="btn" data-bs-toggle="list" data-bs-target="#Extu-Projects">EXTU PROJECT</button>
+                  </section>
+                  <section class="col-sm-8 d-flex align-items-center" id="tab-content">
+                      <div class="tab-pane fade show active" id="US-Projects">
+                        <div class="slideshowWrapper ">
+                            <div id="slide-preview">
 
-        <!--Portfolio-->
-        <div class="section row px-5" id="Portfolio">
-            <div class="col-12 text-center">
-                <h2>US Projects</h2>
-            </div>
-            <div class="col">
-                <div class="Image_Gallery text-center">
-                    <div class="Img_Container"><img alt="Website Design" title="View Website Design" src="src/IMAGES/gallery/Img-Gallery1.webp" onclick="showImage('src/IMAGES/gallery/Img-Gallery1.webp')"><p><a href="https://www.chasegarciatowing.com/" target="_blank">CMS: DUDAONE </a></p> </div>
-                    <div class="Img_Container"><img alt="Website Design" title="View Website Design"  src="src/IMAGES/gallery/Img-Gallery2.webp" onclick="showImage('src/IMAGES/gallery/Img-Gallery2.webp')"><p><a href="https://www.leasecollection.com/" target="_blank">CMS: DUDAONE  </a></p> </div>
-                    <div class="Img_Container"><img alt="Website Design" title="View Website Design" src="src/IMAGES/gallery/Img-Gallery3.webp" onclick="showImage('src/IMAGES/gallery/Img-Gallery3.webp')"><p><a href="https://my.websites.hibu.com/site/7803eb5c54b24a58a98385e38d9e3b5f/?preview=true&insitepreview=true&dm_device=desktop" target="_blank">CMS: DUDAONE</a></p> </div>
-                    <div class="Img_Container"><img alt="Website Design" title="View Website Design" src="src/IMAGES/gallery/Img-Gallery4.webp" onclick="showImage('src/IMAGES/gallery/Img-Gallery4.webp')"><p><a href="https://www.luxautoandsprintercentreknoxville.com/" target="_blank">CMS: DUDAONE </a></p> </div>
-                    <div class="Img_Container"><img alt="Website Design" title="View Website Design" src="src/IMAGES/gallery/Img-Gallery5.webp" onclick="showImage('src/IMAGES/gallery/Img-Gallery5.webp')"><p><a href="https://www.absolute-septic.com/" target="_blank">CMS: DUDAONE </a></p></div> 
-                    <div class="Img_Container"><img alt="Website Design" title="View Website Design" src="src/IMAGES/gallery/Img-Gallery6.webp" onclick="showImage('src/IMAGES/gallery/Img-Gallery6.webp')"><p><a href="https://www.athensfence.com/" target="_blank">CMS: DUDAONE  </a></p></div> 
-                    <div class="Img_Container"><img alt="Website Design" title="View Website Design" src="src/IMAGES/gallery/Img-Gallery7.webp" onclick="showImage('src/IMAGES/gallery/Img-Gallery7.webp')"><p><a href="https://web.archive.org/web/20230315191112/http://www.kneadybynature.com/" target="_blank">CMS: DUDAONE </a></p> </div>
-                    <div class="Img_Container"><img alt="Website Design" title="View Website Design" src="src/IMAGES/gallery/Img-Gallery8.webp" onclick="showImage('src/IMAGES/gallery/Img-Gallery8.webp')"><p><a href="https://my.websites.hibu.com/site/251dd4a8599b45d49095ec444b6d8372/?preview=true&insitepreview=true&dm_device=desktop" target="_blank"> CMS: DUDAONE</a></p> </div>
-                    <div class="Img_Container"><img alt="Website Design" title="View Website Design" src="src/IMAGES/gallery/Img-Gallery9.webp" onclick="showImage('src/IMAGES/gallery/Img-Gallery9.webp')"><p><a href="https://my.websites.hibu.com/site/1ab8d42ae37d4f94b5b6da24abbb9d8f/?preview=true&insitepreview=true&dm_device=desktop" target="_blank">CMS: DUDAONE</a></p></div>
-                    <div class="Img_Container"><img alt="Website Design" title="View Website Design" src="src/IMAGES/gallery/Img-Gallery10.webp" onclick="showImage('src/IMAGES/gallery/Img-Gallery10.webp')"><p><a href="https://www.loveworksagain.com/" target="_blank">CMS:DUDAONE</a></p></div> 
-                    <div class="Img_Container"><img alt="Website Design" title="View Website Design" src="src/IMAGES/gallery/Img-Gallery11.webp" onclick="showImage('src/IMAGES/gallery/Img-Gallery11.webp')"><p><a href="https://my.websites.hibu.com/site/5e21d66d671041c4ad0cd8b31380563c/?preview=true&insitepreview=true&dm_device=desktop" target="_blank">CMS: DUDAONE</a></p> </div>
-                    <div class="Img_Container"><img alt="Website Design" title="View Website Design" src="src/IMAGES/gallery/Img-Gallery12.webp" onclick="showImage('src/IMAGES/gallery/Img-Gallery12.webp')"><p><a href="https://my.websites.hibu.com/site/6d79fa949aef4a00be40bbd85453a2c5/?preview=true&insitepreview=true&dm_device=desktop" target="_blank">CMS: DUDAONE</a></p> </div>
-                    <div class="Img_Container"><img alt="Website Design" title="View Website Design" src="src/IMAGES/gallery/Img-Gallery13.webp" onclick="showImage('src/IMAGES/gallery/Img-Gallery13.webp')"><p><a href="https://www.lsitn.com/" target="_blank">CMS: DUDAONE</a></p></div>  
-                    <div class="Img_Container"><img alt="Website Design" title="View Website Design" src="src/IMAGES/gallery/Img-Gallery14.webp" onclick="showImage('src/IMAGES/gallery/Img-Gallery14.webp')"><p><a href="https://www.inlandhomeimprovementsinc.com/" target="_blank">CMS: DUDAONE</a></p></div>
-                    <div class="Img_Container"><img alt="Website Design" title="View Website Design" src="src/IMAGES/gallery/Img-Gallery15.webp" onclick="showImage('src/IMAGES/gallery/Img-Gallery15.webp')"><p><a href="https://www.sylvaniaconcreteservices.com/" target="_blank">CMS: Weebly</a> </p></div> 
-                    <div class="Img_Container"><img alt="Website Design" title="View Website Design" src="src/IMAGES/gallery/Img-Gallery16.webp" onclick="showImage('src/IMAGES/gallery/Img-Gallery16.webp')"><p><a href="https://www.hollandconcreteservices.com/" target="_blank">CMS: Weebly</a></p></div> 
-                </div>
-            </div>
-            <div class="col-12 text-center">
-                <h2>UK Projects</h2>
-            </div>
-            <div class="col">
-                <div class="Image_Gallery text-center five-cols">
-                    <div class="Img_Container"><img alt="Website Design" title="View Website Design" src="src/IMAGES/UK/UK-Duda-Build-1.webp" onclick="showImage('src/IMAGESUK/UK-Duda-Build-1.webp')"><p><a href="https://www.cdpplant.co.uk/" target="_blank">CMS: DUDAONE</a></p> </div>
-                    <div class="Img_Container"><img alt="Website Design" title="View Website Design"  src="src/IMAGES/UK/UK-Duda-Build-2.webp" onclick="showImage('src/IMAGES/UK/UK-Duda-Build-2.webp')"><p><a href="https://www.stirlingglazingltd.co.uk/" target="_blank">CMS: DUDAONE</a></p> </div>
-                    <div class="Img_Container"><img alt="Website Design" title="View Website Design" src="src/IMAGES/UK/UK-Duda-Build-3.webp" onclick="showImage('src/IMAGES/UK/UK-Duda-Build-3.webp')"><p><a href="https://www.agsacousticmaterials.co.uk/" target="_blank">CMS: DUDAONE</a></p> </div>
-                    <div class="Img_Container"><img alt="Website Design" title="View Website Design"  src="src/IMAGES/UK/UK-Duda-Build-4.webp" onclick="showImage('src/IMAGES/UK/UK-Duda-Build-4.webp')"><p><a href="https://www.ttstyres.co.uk/" target="_blank">CMS: DUDAONE</a></p> </div>
-                    <div class="Img_Container"><img alt="Website Design" title="View Website Design" src="src/IMAGES/UK/UK-Duda-Build-5.webp" onclick="showImage('src/IMAGES/UK/UK-Duda-Build-5.webp')"><p><a href="https://www.woodcutltd.co.uk" target="_blank">CMS: DUDAONE</a></p> </div>
-                </div>
-            </div>
-            <div class="col-12 text-center">
-                <h2>PSD Design Projects</h2>
-            </div>
-            <div class="col">
-                <div class="Image_Gallery">
-                    <div class="Img_Container"><img alt="Website Design" title="View Website Design" src="src/IMAGES/PSD/CameraStore-Webdesign1.png" onclick="showImage('src/IMAGES/PSD/CameraStore-Webdesign1.png')"> </div>
-                    <div class="Img_Container"><img alt="Website Design" title="View Website Design"  src="src/IMAGES/PSD/HighDro-HomePageDesign.jpg" onclick="showImage('src/IMAGES/PSD/HighDro-HomePageDesign.jpg')"> </div>
-                    <div class="Img_Container"><img alt="Website Design" title="View Website Design" src="src/IMAGES/PSD/Koze-HomeRedesign.jpg" onclick="showImage('src/IMAGES/PSD/Koze-HomeRedesign.jpg')"> </div>
-                </div>
-                <div id="expanded_img" class="single_image_display">
-                    <img class="image_content" id="image" alt="" title="">
-                </div>
-                <div id ="btnControl" class="btn-gallery">
-                    <span class="close" onclick="closeImage()">&times;</span>
-                    <button class="Prev-Btn" onclick="previousImage()">&#8592;</button>
-                    <button class="Next-Btn" onclick="nextImage()">&#8594;</button>
-                </div>
-            </div>
-        </div>
-    </div>
+                            </div>
+                            <div id="slideshow">
+                                <div class="slides">
+                                  <img src="src/IMAGES/gallery/Img-Gallery1.webp"" alt="" class="object-fit-cover" />
+                                </div>
+                                <div class="slides">
+                                  <img src="src/IMAGES/gallery/Img-Gallery2.webp"" alt="" class="object-fit-cover" />
+                                </div>
+                                <div class="slides">
+                                  <img src="src/IMAGES/gallery/Img-Gallery3.webp"" alt="" class="object-fit-cover" />
+                                </div>
+                                <div class="slides">
+                                  <img src="src/IMAGES/gallery/Img-Gallery4.webp"" alt="" class="object-fit-cover" />
+                                </div>
+                                <div class="slides">
+                                  <img src="src/IMAGES/gallery/Img-Gallery5.webp"" alt="" class="object-fit-cover" />
+                                </div>
+                                <div class="slides">
+                                  <img src="src/IMAGES/gallery/Img-Gallery6.webp"" alt="" class="object-fit-cover" />
+                                </div>
+                                <div class="slides">
+                                  <img src="src/IMAGES/gallery/Img-Gallery7.webp"" alt="" class="object-fit-cover" />
+                                </div>
+                                <div class="slides">
+                                  <img src="src/IMAGES/gallery/Img-Gallery8.webp"" alt="" class="object-fit-cover" />
+                                </div>
+                                <div class="slides">
+                                  <img src="src/IMAGES/gallery/Img-Gallery9.webp"" alt="" class="object-fit-cover" />
+                                </div>
+                                <div class="slides">
+                                  <img src="src/IMAGES/gallery/Img-Gallery10.webp"" alt="" class="object-fit-cover" />
+                                </div>
+                                <div class="slides">
+                                  <img src="src/IMAGES/gallery/Img-Gallery11.webp"" alt="" class="object-fit-cover" />
+                                </div>
+                                <div class="slides">
+                                  <img src="src/IMAGES/gallery/Img-Gallery12.webp"" alt="" class="object-fit-cover" />
+                                </div>
+                                <div class="slides">
+                                  <img src="src/IMAGES/gallery/Img-Gallery13.webp"" alt="" class="object-fit-cover" />
+                                </div>
+                                <div class="slides">
+                                  <img src="src/IMAGES/gallery/Img-Gallery14.webp"" alt="" class="object-fit-cover" />
+                                </div>
+                                <div class="slides">
+                                  <img src="src/IMAGES/gallery/Img-Gallery15.webp"" alt="" class="object-fit-cover" />
+                                </div>
+                                <div class="slides">
+                                  <img src="src/IMAGES/gallery/Img-Gallery16.webp"" alt="" class="object-fit-cover" />
+                                </div>
+                            </div>
+                             
+                        </div>
+                      </div>
+                      <div class="tab-pane fade" id="UK-Projects"></div>
+                      <div class="tab-pane fade" id="Web-Design"></div>
+                      <div class="tab-pane fade" id="Extu-Projects"></div>
+                  </section>
+              </div>
+            </section>
 
-    <div class="container-fluid">
-        <div class="footer row">
-            <div class="col text-center p-5">
-                <p>Brian Corcega © 2024 All rights reserved.</p>
-            </div>
-            <div class="col-12"><div id="Back_To_Top"><a href="#Home">&#8593;</a></div></div>
+
         </div>
-    </div>
+      </div>
+    </main>
+
 
     <script src="src/js/script.js"></script>
-    <script src="src/js/preloadImg.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+  </body>
 </html>
