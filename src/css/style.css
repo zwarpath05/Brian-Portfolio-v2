@@ -223,6 +223,7 @@ main{
 
 @media only screen and (max-width:992px){
     header{
+        position:relative !important;
         .container { 
             max-width:90% !important;
             border-bottom-left-radius:40px;
@@ -309,6 +310,23 @@ main{
                 position:relative;
                 z-index:1;
             }
+        }
+    }
+    /** TAB **/
+    /** SLIDESHOW **/
+    .slideshowWrapper {
+        flex-direction:column;
+        #slide-preview {
+            display:none !important; 
+        }
+        #slideshow {
+            column-gap:0 !important;
+            width:100% !important;
+
+        }
+        #slideshow .slides {
+            width:50% !important;
+            padding:1rem;
         }
     }
 }
