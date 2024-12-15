@@ -22,6 +22,7 @@
     --large-font:3.125em;
     --medium-font:2em;
     --small-font:1.375em;
+    --extra-small-font:0.875em;
 
     /** FONT FAMILY **/
     --text-family-1:'Albert Sans', sans-serif;
@@ -40,8 +41,9 @@ body{
 }
 /** HEADER **/
 header {
-    position:sticky;
     top:0;
+    z-index:1;
+
     .container{
         background-color:var(--theme-color-3);
         padding:0.1rem 0.9rem;
@@ -127,6 +129,7 @@ header {
 
 }
 
+
 /** TAB SECTION **/
 main{
     /**-PORTFOLIO-**/
@@ -141,7 +144,7 @@ main{
             border-radius:0;
             border:0 !important;
             transition:transform .1s, color .5s, box-shadow .2s;
-            transition-timing-function: cubic-bezier(.1,.21,2.69,1.25)
+            transition-timing-function: cubic-bezier(.1,.21,2.69,1.25);
         }
         .d-flex .btn.active{
             color:var(--theme-color-1) !important;
@@ -161,6 +164,20 @@ main{
         .col-sm-8{ 
             height:100%;
             padding-top:3rem;
+            position:relative;
+        }
+        .tab-pane {
+            position:absolute;
+            isolation: isolate;
+            transform:scale(0);
+            transition:transform .3s;
+            transition-timing-function: cubic-bezier(.1,.21,2.69,1.25);
+        }
+        .tab-pane.active {
+            display:block;
+            transform:scale(1);
+            isolation:auto;
+            position:relative;
         }
 
         /** SlIDESHOW **/
@@ -168,7 +185,7 @@ main{
             display:flex;
             column-gap:2px;
         }
-        #slideshow {
+        .slideshow {
             display:flex;
             flex-wrap:wrap;
             column-gap:3px;
@@ -188,10 +205,7 @@ main{
             .slides.active {
                 filter: grayscale(0);
             }
-            .slide.active img {
-               
-            }
-           
+    
             .slides img {
                 width:100%;
                 height:100%;
@@ -313,20 +327,37 @@ main{
         }
     }
     /** TAB **/
+    [role="tablist"] .btn.active {
+        font-size:var(--extra-small-font) !important;
+    }
     /** SLIDESHOW **/
     .slideshowWrapper {
         flex-direction:column;
         #slide-preview {
             display:none !important; 
         }
-        #slideshow {
+        .slideshow {
             column-gap:0 !important;
             width:100% !important;
 
         }
-        #slideshow .slides {
+        .slideshow .gallery {
             width:50% !important;
             padding:1rem;
+            height:350px;
+            filter:grayscale(1)
+        }
+        .slideshow .gallery.active {
+            filter:grayscale(0);
+        }
+        .slideshow .gallery img {
+            width:100%;
+            height:100%;
+            object-position:top;
+            aspect-ration:5/9;
+            object-fit:cover !important;
         }
     }
+
+    
 }
